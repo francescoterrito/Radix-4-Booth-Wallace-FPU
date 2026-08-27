@@ -1,0 +1,7 @@
+design,strategy,clock_constraint_ns,max_clock_mhz,critical_data_arrival_ns,slack_ns,cell_area_um2,timing_report,area_report,resource_report
+supplied_fpu,compile,2.50,400.00,1.93,0.00,4431.294026,cvfpu_lite/syn/reports/timing1.txt,cvfpu_lite/syn/reports/area1.txt,
+supplied_fpu,compile_retiming,1.99,502.51,1.89,0.00,3941.056038,cvfpu_lite/syn/reports/timing2.txt,cvfpu_lite/syn/reports/area2.txt,
+supplied_fpu,compile_ultra,2.18,458.72,2.08,0.00,3548.174019,cvfpu_lite/syn/reports/timing3.txt,cvfpu_lite/syn/reports/area3.txt,cvfpu_lite/syn/reports/resources3.txt
+supplied_fpu,forced_csa_retiming,1.95,512.82,1.84,0.00,4131.246041,cvfpu_lite/syn/reports/timing4.txt,cvfpu_lite/syn/reports/area4.txt,cvfpu_lite/syn/reports/resources4.txt
+supplied_fpu,forced_pparch_retiming,1.85,540.54,1.74,0.00,4212.642042,cvfpu_lite/syn/reports/timing5.txt,cvfpu_lite/syn/reports/area5.txt,cvfpu_lite/syn/reports/resources5.txt
+custom_r4_mbe_wallace,compile_retiming,1.87,534.76,1.76,0.00,4439.274041,cvfpu_lite/ex3/syn/reports/timing2.txt,cvfpu_lite/ex3/syn/reports/area2.txt,cvfpu_lite/ex3/syn/reports/resources2.txt

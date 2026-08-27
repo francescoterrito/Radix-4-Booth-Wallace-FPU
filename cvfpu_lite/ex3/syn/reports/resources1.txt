@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : resources
+Design : fpnew_top
+Version: S-2021.06-SP4
+Date   : Sun Dec 21 13:55:34 2025
+****************************************
+
+Resource Sharing Report for design fpnew_top in file ../src/fpnew_top.sv
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r745     | DW01_cmp2    | width=3    |               | gen_operation_groups[0].i_opgroup_block/i_arbiter/gt_208_G4 |
+|               |                      |
+|          |              |            |               | gen_operation_groups[0].i_opgroup_block/i_arbiter/lte_209_G4 |
+| r746     | DW01_cmp2    | width=3    |               | gen_operation_groups[1].i_opgroup_block/i_arbiter/gt_208_G4 |
+|               |                      |
+|          |              |            |               | gen_operation_groups[1].i_opgroup_block/i_arbiter/lte_209_G4 |
+| r747     | DW01_cmp2    | width=3    |               | gen_operation_groups[2].i_opgroup_block/i_arbiter/gt_208_G4 |
+|               |                      |
+|          |              |            |               | gen_operation_groups[2].i_opgroup_block/i_arbiter/lte_209_G4 |
+| r748     | DW01_cmp2    | width=3    |               | gen_operation_groups[3].i_opgroup_block/i_arbiter/gt_208_G4 |
+|               |                      |
+|          |              |            |               | gen_operation_groups[3].i_opgroup_block/i_arbiter/lte_209_G4 |
+| r749     | DW01_cmp2    | width=2    |               | i_arbiter/gt_208_G4  |
+|          |              |            |               | i_arbiter/lte_209_G4 |
+| r783     | DW01_add     | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_286 |
+| r791     | DW01_sub     | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_294 |
+| r793     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/gt_296 |
+| r795     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/lte_303 |
+| r797     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/lte_306 |
+| r799     | DW01_sub     | width=5    |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_307 |
+| r801     | DW_rightsh   | A_width=36 |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/srl_363 |
+|
+|          |              | SH_width=5 |               |                      |
+| r803     | DW01_add     | width=29   |               | add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_382_2 |
+| r805     | DW01_sub     | width=28   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_386 |
+| r807     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/lte_524 |
+| r809     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/lte_524_2 |
+| r815     | DW_cmp       | width=12   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/gte_526 |
+| r817     | DW01_add     | width=5    |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_528 |
+| r823     | DW01_add     | width=5    |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_533 |
+| r825     | DW_leftsh    | A_width=29 |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sll_544 |
+|
+|          |              | SH_width=5 |               |                      |
+| r827     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/gt_561 |
+| r829     | DW01_inc     | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_556 |
+| r831     | DW01_dec     | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_563 |
+| r833     | DW_cmp       | width=10   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/gte_590 |
+| r835     | DW01_sub     | width=11   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/wtree/matrix/gen_pp[0].ppgen/sub_125_S2 |
+| r837     | DW01_sub     | width=11   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/wtree/matrix/gen_pp[1].ppgen/sub_125_S2 |
+| r839     | DW01_sub     | width=11   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/wtree/matrix/gen_pp[2].ppgen/sub_125_S2 |
+| r841     | DW01_sub     | width=11   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/wtree/matrix/gen_pp[3].ppgen/sub_125_S2 |
+| r843     | DW01_sub     | width=11   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/wtree/matrix/gen_pp[4].ppgen/sub_125_S2 |
+| r845     | DW01_add     | width=15   |               | gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/i_fpnew_rounding/add_63 |
+| r1573    | DW01_add     | width=10   |               | add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_288 |
+| r1575    | DW01_sub     | width=10   |               | sub_2_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_288 |
+| r1577    | DW01_add     | width=10   |               | add_0_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_288 |
+| r2297    | DW01_sub     | width=11   |               | sub_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_526 |
+| r2299    | DW01_inc     | width=12   |               | add_0_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_526 |
+| r3019    | DW01_sub     | width=10   |               | sub_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_529 |
+| r3021    | DW01_inc     | width=10   |               | add_0_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_529 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_382_2 |
+|                    | DW01_add         | pparch (area,speed)                 |
+| gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_386 |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_0_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_529 |
+|                    | DW01_inc         | pparch (area,speed)                 |
+| gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/add_556 |
+|                    | DW01_inc         | pparch (area,speed)                 |
+| gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_294 |
+|                    | DW01_sub         | pparch (area,speed)                 |
+| add_1_root_add_1_root_gen_operation_groups[0].i_opgroup_block/gen_parallel_slices[4].active_format.i_fmt_slice/gen_num_lanes[0].active_lane.lane_instance.i_fma/sub_288 |
+|                    | DW01_add         | pparch (area,speed)                 |
+===============================================================================
+
+1

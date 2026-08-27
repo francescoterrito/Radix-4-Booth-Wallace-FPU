@@ -1,0 +1,24 @@
+.DS_Store
+**/.DS_Store
+**/work/
+**/build/
+**/__pycache__/
+*.pyc
+*.wlf
+*.vstf
+*.swp
+*.swo
+*.log
+command.log
+transcript
+*.svf
+*.ddc
+*.mr
+*.pvl
+*.pvk
+*.syn
+*.alib
+*.sdf
+**/netlist/
+# Combined private course report
+homebook.pdf

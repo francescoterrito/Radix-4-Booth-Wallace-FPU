@@ -1,0 +1,16 @@
+Source: final successful RTL run in cvfpu_lite/sim/transcript
+Format: bfloat16 hexadecimal operands and result
+
+A=40e0 B=41c8 Result=432f
+A=3f00 B=3f00 Result=3e80
+A=4180 B=3e80 Result=4080
+A=41a0 B=4248 Result=447a
+A=4158 B=4040 Result=4222
+A=4000 B=42a6 Result=4326
+A=4100 B=40e0 Result=4260
+A=40e0 B=40c0 Result=4228
+A=4110 B=4100 Result=4290
+A=4130 B=4130 Result=42f2
+
+Questa summary: Errors=0, Warnings=12
+Simulation stop: 1265 ns

@@ -1,0 +1,8 @@
+*.pdf binary
+*.png binary
+cvfpu_lite/src/** linguist-vendored
+cvfpu_lite/ex3/src/cf_math_pkg.sv linguist-vendored
+cvfpu_lite/ex3/src/fpnew_*.sv linguist-vendored
+cvfpu_lite/ex3/src/lzc.sv linguist-vendored
+cvfpu_lite/ex3/src/registers.svh linguist-vendored
+cvfpu_lite/ex3/src/rr_arb_tree.sv linguist-vendored

@@ -1,0 +1,72 @@
+# SYNTHESIS SCRIPT
+# Make sure file .synopsis_dc.setup is present in the syn folder before running the synthesis
+# Before running the synthesis source the initialization script "source /eda/scripts/init_design_vision"
+# To run this synthesis script "dc_shell-xg-t -f synthesis.scr > mylogfile.log"
+# To view the results of the synthesis "less mylogfile.log"
+
+source ./.synopsys_dc.setup
+
+# Source files that need to be analyzed
+analyze -f sverilog -lib WORK ../src/multiplier_reduced.sv	
+analyze -f sverilog -lib WORK ../src/cf_math_pkg.sv
+analyze -f sverilog -lib WORK ../src/lzc.sv
+analyze -f sverilog -lib WORK ../src/rr_arb_tree.sv
+analyze -f sverilog -lib WORK ../src/fpnew_pkg.sv
+analyze -f sverilog -lib WORK ../src/fpnew_classifier.sv
+analyze -f sverilog -lib WORK ../src/fpnew_rounding.sv
+analyze -f sverilog -lib WORK ../src/fpnew_fma.sv
+analyze -f sverilog -lib WORK ../src/fpnew_opgroup_fmt_slice.sv
+analyze -f sverilog -lib WORK ../src/fpnew_opgroup_block.sv
+analyze -f sverilog -lib WORK ../src/fpnew_top.sv
+
+# Preserve RTL hierarchy and  names in the netlist to help debugging
+set power_preserve_rtl_hier_names true
+
+# Issue the elaborate command with the name of the top entity in the design (build the design database from the analyzed files)
+elaborate fpnew_top -lib WORK > reports/elaborate.txt
+
+create_clock -name MY_CLK -period 0 [get_ports clk_i]
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] [get_ports clk_i]]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+# Ungroup the cells to flatten the hierarchy (avoid flattening to simplify simulation debugging)
+ungroup -all -flatten ; # uncomment for point 4 and 5, comment for 1, 2, 3
+
+# Force multipliers to CSA or PPARCH
+#set_implementation DW02_mult/csa [find cell *mult*]	; # uncomment for point 4, comment for all others
+#set_dont_use [get_lib_cells */DP_OP_*J1*]		; # Uncomment for point 5 only / seems broken
+#set_dont_use [get_lib_cells */DW_mult_pipe*]		; # Uncomment for point 5 only / seems broken
+#set_dont_use [get_lib_cells */DW02_mult_seq*]		; # Uncomment for point 5 only / seems broken
+#set_implementation DW02_mult/pparch [get_cells -hier *mult*]	; # uncomment for point 5, comment for all others
+link
+
+# Start the synthesis process 
+compile		; 	# comment for point 3, uncomment for all others
+#compile_ultra	;	# uncomment for point 3, comment for all others
+
+# Optimize registers (uncomment for points 2, 4 and 5, comment for points 1 and 3)
+optimize_registers
+create_clock -name MY_CLK -period 1.87 [get_ports clk_i]	;	# Comment when finding tmin and Uncomment after to enforce the constraint
+#compile_ultra -incremental					;	# Equivalent of -incremental_mapping for compile_ultra
+compile -incremental_mapping					;	# Comment when finding tmin and Uncomment after to compile again with the constraint
+
+# Optimize registers (uncomment for points 2, 4 and 5, comment for points 1 and 3)
+optimize_registers
+
+# Save the results
+report_timing > reports/timing2.txt
+report_area > reports/area2.txt
+report_resources > reports/resources2.txt
+
+# Export netlist in verilog
+change_names -hierarchy -rules verilog
+# write_sdf netlist/fpnew_top.sdf				; # file describing the delay of the netlist
+write -f verilog -hierarchy -output netlist/fpnew_top.v		; # gate-level netlist in verilog
+# write_sdc netlist/fpnew_top.sdc				; # constraints on input and output ports in a standard format
+
+# Quit the synthesis
+quit

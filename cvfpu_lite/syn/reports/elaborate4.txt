@@ -1,0 +1,348 @@
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/gtech.db'
+Loading db file '/eda/synopsys/2021-22/RHELx86/SYN_2021.06-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 75 in file
+	'../src/fpnew_top.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           400            |    user/user     |
+===============================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   fpnew_top/75   |   4    |    1    |      2       |
+======================================================
+Presto compilation completed successfully. (fpnew_top)
+Elaborated 1 design.
+Current design is now 'fpnew_top'.
+Information: Building the design 'fpnew_opgroup_block' instantiated from design 'fpnew_top' with
+	the parameters "OpGroup=2'h0,Width=32'h00000010,EnableVectors=1'h0,FpFmtMask=5'h01,IntFmtMask=4'h4,FmtPipeRegs=160'h0000000200000002000000020000000200000002@parray[31:0][0:4],FmtUnitTypes=10'h155@parray[1:0][0:4],PipeConfig=2'h3,TagType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Presto compilation completed successfully. (fpnew_opgroup_block_0_00000010_0_01_4_155_3__logic_Z_1yB__395949)
+Information: Building the design 'fpnew_opgroup_block' instantiated from design 'fpnew_top' with
+	the parameters "OpGroup=2'h1,Width=32'h00000010,EnableVectors=1'h0,FpFmtMask=5'h01,IntFmtMask=4'h4,FmtPipeRegs=160'h0000000200000002000000020000000200000002@parray[31:0][0:4],FmtUnitTypes=10'h000@parray[1:0][0:4],PipeConfig=2'h3,TagType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Presto compilation completed successfully. (fpnew_opgroup_block_1_00000010_0_01_4_000_3__logic_Z_1yB__395949)
+Information: Building the design 'fpnew_opgroup_block' instantiated from design 'fpnew_top' with
+	the parameters "OpGroup=2'h2,Width=32'h00000010,EnableVectors=1'h0,FpFmtMask=5'h01,IntFmtMask=4'h4,FmtPipeRegs=160'h0000000200000002000000020000000200000002@parray[31:0][0:4],FmtUnitTypes=10'h000@parray[1:0][0:4],PipeConfig=2'h3,TagType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Presto compilation completed successfully. (fpnew_opgroup_block_2_00000010_0_01_4_000_3__logic_Z_1yB__395949)
+Information: Building the design 'fpnew_opgroup_block' instantiated from design 'fpnew_top' with
+	the parameters "OpGroup=2'h3,Width=32'h00000010,EnableVectors=1'h0,FpFmtMask=5'h01,IntFmtMask=4'h4,FmtPipeRegs=160'h0000000200000002000000020000000200000002@parray[31:0][0:4],FmtUnitTypes=10'h000@parray[1:0][0:4],PipeConfig=2'h3,TagType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Presto compilation completed successfully. (fpnew_opgroup_block_3_00000010_0_01_4_000_3__logic_Z_1yB__395949)
+Information: Building the design 'rr_arb_tree' instantiated from design 'fpnew_top' with
+	the parameters "NumIn=32'h00000004,DataType="struct(0%fpnew_top:_Pr0o0YM1Si%(result%sywREG%array(0%15%0%logic))(status%sywREG%struct(0%fpnew_pkg:_Pr01Lyh25i%(NV%sywREG%logic)(DZ%sywREG%logic)(OF%sywREG%logic)(UF%sywREG%logic)(NX%sywREG%logic)))(tag%sywREG%logic))%I$MyC$d",AxiVldRdy=1'h1". (HDL-193)
+
+Inferred memory devices in process
+	in routine rr_arb_tree_00000004_1_891242 line 238 in file
+		'../src/rr_arb_tree.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| gen_arbiter.rr_q_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (rr_arb_tree_00000004_1_891242)
+Information: Building the design 'fpnew_opgroup_fmt_slice' instantiated from design 'fpnew_opgroup_block_0_00000010_0_01_4_155_3__logic_Z_1yB__395949' with
+	the parameters "OpGroup=2'h0,FpFormat=3'h4,Width=32'h00000010,EnableVectors=1'h0,NumPipeRegs=32'h00000002,PipeConfig=2'h3,TagType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_pkg.sv:411: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Presto compilation completed successfully. (fpnew_opgroup_fmt_slice_0_4_00000010_0_00000002_3__logic_Z_1yB_)
+Information: Building the design 'rr_arb_tree' instantiated from design 'fpnew_opgroup_block_0_00000010_0_01_4_155_3__logic_Z_1yB__395949' with
+	the parameters "NumIn=32'h00000005,DataType="struct(0%fpnew_opgroup_block_0_00000010_0_01_4_155_3__logic_Z_1yB__395949:_Pr0OIIBAMa%(result%sywREG%array(0%15%0%logic))(status%sywREG%struct(0%fpnew_pkg:_Pr01Lyh25i%(NV%sywREG%logic)(DZ%sywREG%logic)(OF%sywREG%logic)(UF%sywREG%logic)(NX%sywREG%logic)))(ext_bit%sywREG%logic)(tag%sywREG%logic))%khJj99i",AxiVldRdy=1'h1". (HDL-193)
+
+Inferred memory devices in process
+	in routine rr_arb_tree_00000005_1_024242 line 238 in file
+		'../src/rr_arb_tree.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| gen_arbiter.rr_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (rr_arb_tree_00000005_1_024242)
+Information: Building the design 'rr_arb_tree' instantiated from design 'fpnew_opgroup_block_1_00000010_0_01_4_000_3__logic_Z_1yB__395949' with
+	the parameters "NumIn=32'h00000005,DataType="struct(0%fpnew_opgroup_block_1_00000010_0_01_4_000_3__logic_Z_1yB__395949:_Pr0OIIBAMa%(result%sywREG%array(0%15%0%logic))(status%sywREG%struct(0%fpnew_pkg:_Pr01Lyh25i%(NV%sywREG%logic)(DZ%sywREG%logic)(OF%sywREG%logic)(UF%sywREG%logic)(NX%sywREG%logic)))(ext_bit%sywREG%logic)(tag%sywREG%logic))%cVj@DRa",AxiVldRdy=1'h1". (HDL-193)
+
+Inferred memory devices in process
+	in routine rr_arb_tree_00000005_1_838242 line 238 in file
+		'../src/rr_arb_tree.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| gen_arbiter.rr_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (rr_arb_tree_00000005_1_838242)
+Information: Building the design 'rr_arb_tree' instantiated from design 'fpnew_opgroup_block_2_00000010_0_01_4_000_3__logic_Z_1yB__395949' with
+	the parameters "NumIn=32'h00000005,DataType="struct(0%fpnew_opgroup_block_2_00000010_0_01_4_000_3__logic_Z_1yB__395949:_Pr0OIIBAMa%(result%sywREG%array(0%15%0%logic))(status%sywREG%struct(0%fpnew_pkg:_Pr01Lyh25i%(NV%sywREG%logic)(DZ%sywREG%logic)(OF%sywREG%logic)(UF%sywREG%logic)(NX%sywREG%logic)))(ext_bit%sywREG%logic)(tag%sywREG%logic))%Umk&lo&",AxiVldRdy=1'h1". (HDL-193)
+
+Inferred memory devices in process
+	in routine rr_arb_tree_00000005_1_752242 line 238 in file
+		'../src/rr_arb_tree.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| gen_arbiter.rr_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (rr_arb_tree_00000005_1_752242)
+Information: Building the design 'rr_arb_tree' instantiated from design 'fpnew_opgroup_block_3_00000010_0_01_4_000_3__logic_Z_1yB__395949' with
+	the parameters "NumIn=32'h00000005,DataType="struct(0%fpnew_opgroup_block_3_00000010_0_01_4_000_3__logic_Z_1yB__395949:_Pr0OIIBAMa%(result%sywREG%array(0%15%0%logic))(status%sywREG%struct(0%fpnew_pkg:_Pr01Lyh25i%(NV%sywREG%logic)(DZ%sywREG%logic)(OF%sywREG%logic)(UF%sywREG%logic)(NX%sywREG%logic)))(ext_bit%sywREG%logic)(tag%sywREG%logic))%kFdD#Sa",AxiVldRdy=1'h1". (HDL-193)
+
+Inferred memory devices in process
+	in routine rr_arb_tree_00000005_1_389242 line 238 in file
+		'../src/rr_arb_tree.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| gen_arbiter.rr_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (rr_arb_tree_00000005_1_389242)
+Information: Building the design 'lzc' instantiated from design 'rr_arb_tree_00000004_1_891242' with
+	the parameters "WIDTH=32'h00000004,MODE=1'h0". (HDL-193)
+Presto compilation completed successfully. (lzc_00000004_0)
+Information: Building the design 'fpnew_fma' instantiated from design 'fpnew_opgroup_fmt_slice_0_4_00000010_0_00000002_3__logic_Z_1yB_' with
+	the parameters "FpFormat=3'h4,NumPipeRegs=32'h00000002,PipeConfig=2'h3,TagType="logic%Z@1yB@&",AuxType="logic%Z@1yB@&"". (HDL-193)
+Warning:  ../src/fpnew_fma.sv:581: signed to unsigned part selection occurs. (VER-318)
+
+Statistics for case statements in always block at line 176 in file
+	'../src/fpnew_fma.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           189            |    user/user     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 133 in file
+		'../src/fpnew_fma.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| inp_pipe_valid_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | Y  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 137 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| inp_pipe_operands_q_reg | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 138 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| inp_pipe_is_boxed_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 139 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| inp_pipe_rnd_mode_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 140 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  inp_pipe_op_q_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 141 in file
+		'../src/fpnew_fma.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| inp_pipe_op_mod_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 142 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| inp_pipe_tag_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 143 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| inp_pipe_aux_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 442 in file
+		'../src/fpnew_fma.sv'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| mid_pipe_valid_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | Y  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 446 in file
+		'../src/fpnew_fma.sv'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| mid_pipe_eff_sub_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 447 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| mid_pipe_exp_prod_q_reg | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 448 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| mid_pipe_exp_diff_q_reg | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 449 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| mid_pipe_tent_exp_q_reg | Flip-flop |  10   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 450 in file
+		'../src/fpnew_fma.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| mid_pipe_add_shamt_q_reg | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 451 in file
+		'../src/fpnew_fma.sv'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| mid_pipe_sticky_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 452 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mid_pipe_sum_q_reg  | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 453 in file
+		'../src/fpnew_fma.sv'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| mid_pipe_final_sign_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 454 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| mid_pipe_rnd_mode_q_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 455 in file
+		'../src/fpnew_fma.sv'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+| mid_pipe_res_is_spec_q_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 456 in file
+		'../src/fpnew_fma.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| mid_pipe_spec_res_q_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 457 in file
+		'../src/fpnew_fma.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| mid_pipe_spec_stat_q_reg | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 458 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mid_pipe_tag_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_ line 459 in file
+		'../src/fpnew_fma.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mid_pipe_aux_q_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_)
+Information: Building the design 'lzc' instantiated from design 'rr_arb_tree_00000005_1_024242' with
+	the parameters "WIDTH=32'h00000005,MODE=1'h0". (HDL-193)
+Presto compilation completed successfully. (lzc_00000005_0)
+Information: Building the design 'fpnew_classifier' instantiated from design 'fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_' with
+	the parameters "FpFormat=3'h4,NumOperands=3". (HDL-193)
+Presto compilation completed successfully. (fpnew_classifier_4_3)
+Information: Building the design 'lzc' instantiated from design 'fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_' with
+	the parameters "WIDTH=32'h00000013,MODE=1". (HDL-193)
+Presto compilation completed successfully. (lzc_00000013_1)
+Information: Building the design 'fpnew_rounding' instantiated from design 'fpnew_fma_4_00000002_3__logic_Z_1yB___logic_Z_1yB_' with
+	the parameters "AbsWidth=32'h0000000f". (HDL-193)
+Warning:  ../src/fpnew_rounding.sv:47: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 44 in file
+	'../src/fpnew_rounding.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            45            |    user/user     |
+|            47            |    user/user     |
+===============================================
+Presto compilation completed successfully. (fpnew_rounding_0000000f)
+1
